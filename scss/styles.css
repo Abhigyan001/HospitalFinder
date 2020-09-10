@@ -49,4 +49,84 @@ body {
     padding-left: 5%;
   }
 }
+
+.section1 {
+  background-image: url(../images/hospital.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.63)), to(rgba(155, 148, 148, 0.801)));
+  background-image: url(../images/hospital.jpg), linear-gradient(rgba(0, 0, 0, 0.63), rgba(155, 148, 148, 0.801));
+  background-blend-mode: overlay;
+  min-height: 95vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section1 .how {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .section1 h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section1 h1 {
+    font-size: 25px;
+    margin-top: 10%;
+    width: 100%;
+  }
+}
+
+.section1 .find {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 3%;
+  width: 60%;
+}
+
+.section1 .find a {
+  background-color: #d3574a;
+  width: 30%;
+  text-decoration: none;
+}
+
+.section1 .find input {
+  width: 80%;
+}
+
+@media screen and (max-width: 767px) {
+  .section1 .find {
+    padding: 5% 0.8%;
+    width: 95%;
+  }
+  .section1 .find form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section1 .find form input {
+    display: block;
+    width: 100%;
+  }
+  .section1 .find form a {
+    margin-top: 1%;
+    width: 100%;
+  }
+}
+
+.section1 button {
+  -webkit-transition: -webkit-transform 0.8s linear;
+  transition: -webkit-transform 0.8s linear;
+  transition: transform 0.8s linear;
+  transition: transform 0.8s linear, -webkit-transform 0.8s linear;
+}
+
+.section1 button:hover {
+  background-color: #dbe6f1;
+  -webkit-transform: translateX(-7px);
+          transform: translateX(-7px);
+}
 /*# sourceMappingURL=styles.css.map */

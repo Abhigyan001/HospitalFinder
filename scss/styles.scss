@@ -22,6 +22,19 @@ $contact-color: #dd3c33;
   }
 }
 
+@mixin border {
+  border: 1px solid lightgray;
+}
+
+@mixin button {
+  transition: transform 0.8s linear;
+
+  &:hover {
+    background-color: #dbe6f1;
+    transform: translateX(-7px);
+  }
+}
+
 // navbar
 .nav-menu {
   background-color: $nav-color;
@@ -55,5 +68,74 @@ $contact-color: #dd3c33;
       justify-content: space-between;
       padding-left: 5%;
     }
+  }
+}
+
+// section 1
+
+.section1 {
+  background-image: url(../images/hospital.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.63), rgba(155, 148, 148, 0.801));
+  background-blend-mode: overlay;
+  min-height: 95vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .how {
+    text-decoration: none;
+  }
+
+  h1 {
+    @include tabs {
+      font-size: 25px;
+    }
+
+    @include mobile {
+      font-size: 25px;
+      margin-top: 10%;
+      width: 100%;
+    }
+  }
+
+  .find {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 3%;
+    width: 60%;
+
+    a {
+      background-color: $nav-color;
+      width: 30%;
+      text-decoration: none;
+    }
+
+    input {
+      width: 80%;
+    }
+
+    @include mobile {
+      padding: 5% 0.8%;
+      width: 95%;
+
+      form {
+        flex-direction: column;
+
+        input {
+          display: block;
+          width: 100%;
+        }
+
+        a {
+          margin-top: 1%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  button {
+    @include button;
   }
 }
