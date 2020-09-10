@@ -139,3 +139,29 @@ $contact-color: #dd3c33;
     @include button;
   }
 }
+
+// section 2
+.section2 {
+  h5 {
+    color: $nav-color;
+  }
+
+  .newcontain {
+    margin-top: 42px;
+
+    .col-lg-5 {
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+      }
+
+      span {
+        order: 2;
+
+        @include mobile {
+          margin-bottom: 10%;
+        }
+      }
+    }
+  }
+}
