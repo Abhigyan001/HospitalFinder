@@ -4,4 +4,49 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.nav-menu {
+  background-color: #d3574a;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-menu nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-menu {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-menu .d-md-none {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-menu .menu-items {
+    width: 75%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 5%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
