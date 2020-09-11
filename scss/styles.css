@@ -64,6 +64,12 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 767px) {
+  .section1 .how {
+    margin-bottom: 2%;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .section1 h1 {
     font-size: 25px;
@@ -175,7 +181,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .d-flex {
+  .section3 .d-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -187,13 +193,13 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .d-flex .newwidth {
+  .section3 .d-flex .newwidth {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .d-flex .newwidth {
+  .section3 .d-flex .newwidth {
     width: 50%;
   }
 }
@@ -215,6 +221,7 @@ body {
         -ms-grid-row-align: center;
         align-self: center;
     margin-bottom: -10%;
+    margin-left: 10%;
   }
 }
 
@@ -225,11 +232,16 @@ body {
   }
 }
 
+.footer-second button {
+  background-color: rgba(94, 91, 91, 0.582);
+  border: 1px solid lightgray;
+}
+
 footer {
   background-color: black;
 }
 
-footer .footer-top {
+footer .footer-first {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -238,29 +250,29 @@ footer .footer-top {
           justify-content: center;
 }
 
-footer .footer-top .footericon {
+footer .footer-first .footericon {
   border: 1px solid white;
   border-radius: 50%;
 }
 
 @media screen and (max-width: 767px) {
-  footer .footer-top {
+  footer .footer-first {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  footer .footer-top a {
+  footer .footer-first a {
     font-size: 10px;
   }
-  footer .footer-top .footericon {
+  footer .footer-first .footericon {
     padding: 2%;
     margin: 0.5% 0;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  footer .footer-top {
+  footer .footer-first {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -269,9 +281,89 @@ footer .footer-top .footericon {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  footer .footer-top .footericon {
+  footer .footer-first .footericon {
     padding: 2%;
     margin: 0.5% 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-second h4 {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  footer .footer-second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-second .col-lg-4:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-second .col-lg-4:nth-child(2) {
+    margin: 5% 0;
+  }
+}
+
+footer .footer-second input {
+  background-color: black;
+  border: 1px solid lightgray;
+}
+
+footer .footer-second .emailid {
+  color: #dd3c33;
+  font-size: 18px;
+}
+
+footer .footer-second .learn-more {
+  color: #dd3c33;
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-second .col-lg-4:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-second .col-lg-4:nth-child(2) {
+    margin: 5% 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -84,6 +84,9 @@ $contact-color: #dd3c33;
 
   .how {
     text-decoration: none;
+    @include mobile {
+      margin-bottom: 2%;
+    }
   }
 
   h1 {
@@ -180,19 +183,21 @@ $contact-color: #dd3c33;
   background-color: #519cd7;
 }
 
-.d-flex {
-  @include mobile {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .newwidth {
+.section3 {
+  .d-flex {
     @include mobile {
-      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
     }
 
-    @include tabs {
-      width: 50%;
+    .newwidth {
+      @include mobile {
+        width: 100%;
+      }
+
+      @include tabs {
+        width: 50%;
+      }
     }
   }
 }
@@ -208,6 +213,7 @@ $contact-color: #dd3c33;
     width: 55%;
     align-self: center;
     margin-bottom: -10%;
+    margin-left: 10%;
   }
 }
 
@@ -220,10 +226,17 @@ $contact-color: #dd3c33;
 
 // footer
 
+.footer-second {
+  button {
+    background-color: rgba(94, 91, 91, 0.582);
+    @include border;
+  }
+}
+
 footer {
   background-color: black;
 
-  .footer-top {
+  .footer-first {
     align-items: center;
     justify-content: center;
 
@@ -252,6 +265,64 @@ footer {
       .footericon {
         padding: 2%;
         margin: 0.5% 0;
+      }
+    }
+  }
+
+  .footer-second {
+    h4 {
+      @include mobile {
+        margin-top: 10%;
+      }
+    }
+
+    @include tabs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .col-lg-4 {
+        &:nth-child(1) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        &:nth-child(2) {
+          margin: 5% 0;
+        }
+      }
+    }
+
+    input {
+      background-color: black;
+      @include border;
+    }
+
+    .emailid {
+      color: $contact-color;
+      font-size: 18px;
+    }
+
+    .learn-more {
+      color: $contact-color;
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .col-lg-4 {
+        &:nth-child(1) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        &:nth-child(2) {
+          margin: 5% 0;
+        }
       }
     }
   }
