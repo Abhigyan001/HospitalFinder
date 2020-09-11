@@ -5,7 +5,7 @@ body {
 }
 
 $nav-color: #d3574a;
-$custom-grey: #6c757d;
+$custom-grey: #98a4a5;
 $contact-color: #dd3c33;
 
 //media-queries for tabs and mobile
@@ -165,6 +165,55 @@ $contact-color: #dd3c33;
     }
   }
 }
+
+// Section 3
+
 .card1 {
   background-color: $nav-color;
+}
+
+.card2 {
+  background-color: $custom-grey;
+}
+
+.card3 {
+  background-color: #519cd7;
+}
+
+.d-flex {
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .newwidth {
+    @include mobile {
+      width: 100%;
+    }
+
+    @include tabs {
+      width: 50%;
+    }
+  }
+}
+
+.width {
+  width: 20%;
+
+  @include tabs {
+    width: 30%;
+  }
+
+  @include mobile {
+    width: 75%;
+    margin-left: 17%;
+    margin-bottom: -16%;
+  }
+}
+
+.para {
+  @include mobile {
+    text-align: center;
+    margin-left: 5%;
+  }
 }

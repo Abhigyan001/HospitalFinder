@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .nav-menu {
@@ -18,18 +18,18 @@ body {
   .nav-menu nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 @media screen and (max-width: 767px) {
   .nav-menu {
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
     width: 100%;
   }
 }
@@ -44,17 +44,15 @@ body {
   .nav-menu .menu-items {
     width: 75%;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-left: 5%;
   }
 }
 
 .section1 {
-  background-image: url(../images/hospital.jpg),
-    -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.63)), to(rgba(155, 148, 148, 0.801)));
-  background-image: url(../images/hospital.jpg),
-    linear-gradient(rgba(0, 0, 0, 0.63), rgba(155, 148, 148, 0.801));
+  background-image: url(../images/hospital.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.63)), to(rgba(155, 148, 148, 0.801)));
+  background-image: url(../images/hospital.jpg), linear-gradient(rgba(0, 0, 0, 0.63), rgba(155, 148, 148, 0.801));
   background-blend-mode: overlay;
   min-height: 95vh;
   background-repeat: no-repeat;
@@ -106,8 +104,8 @@ body {
   .section1 .find form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .section1 .find form input {
     display: block;
@@ -129,7 +127,7 @@ body {
 .section1 button:hover {
   background-color: #dbe6f1;
   -webkit-transform: translateX(-7px);
-  transform: translateX(-7px);
+          transform: translateX(-7px);
 }
 
 .section2 h5 {
@@ -147,15 +145,15 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .section2 .newcontain .col-lg-5 span {
   -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 @media screen and (max-width: 767px) {
@@ -168,17 +166,35 @@ body {
   background-color: #d3574a;
 }
 
-@media screen and (max-width: 767px) {
-  .col-md-12 {
-    flex-direction: column-reverse;
-    align-items: center;
-    margin: 2% auto;
-  }
+.card2 {
+  background-color: #98a4a5;
+}
 
-  .para {
-    text-align: center;
-    margin: 0;
-    padding: 2%;
+.card3 {
+  background-color: #519cd7;
+}
+
+@media screen and (max-width: 767px) {
+  .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .d-flex .newwidth {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .d-flex .newwidth {
+    width: 50%;
   }
 }
 
@@ -188,14 +204,22 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .width {
-    width: 35%;
+    width: 30%;
   }
 }
 
 @media screen and (max-width: 767px) {
   .width {
     width: 75%;
+    margin-left: 17%;
+    margin-bottom: -16%;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .para {
+    text-align: center;
+    margin-left: 5%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
