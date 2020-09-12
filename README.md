@@ -58,8 +58,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Acknowlegment] Mathew Njuguna https://www.behance.net/mathewnjuguna
-- Inspiration
-- etc
 
 ## 📝 License
 
