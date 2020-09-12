@@ -5,10 +5,6 @@ body {
   box-sizing: border-box;
 }
 
-* a {
-  text-decoration: none !important;
-}
-
 .nav-menu {
   background-color: #d3574a;
 }
@@ -54,6 +50,10 @@ body {
   }
 }
 
+.footer-first a {
+  text-decoration: none;
+}
+
 .footer-second button {
   background-color: rgba(94, 91, 91, 0.582);
   border: 1px solid lightgray;
@@ -68,6 +68,10 @@ body {
   .footer-third a {
     padding-right: 0;
   }
+}
+
+.section3 a {
+  text-decoration: none;
 }
 
 .section1 {

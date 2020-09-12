@@ -4,10 +4,6 @@ body {
   box-sizing: border-box;
 }
 
-* a {
-  text-decoration: none !important;
-}
-
 $nav-color: #d3574a;
 $custom-grey: #98a4a5;
 $contact-color: #dd3c33;
@@ -76,6 +72,13 @@ $contact-color: #dd3c33;
 }
 
 //footer
+
+.footer-first {
+  a {
+    text-decoration: none;
+  }
+}
+
 .footer-second {
   button {
     background-color: rgba(94, 91, 91, 0.582);
@@ -96,6 +99,11 @@ $contact-color: #dd3c33;
       padding-right: 0;
     }
   }
+}
+
+//section 3
+.section3 a {
+  text-decoration: none;
 }
 
 // section 1

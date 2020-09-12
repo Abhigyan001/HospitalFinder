@@ -6,17 +6,7 @@
 
 ## Landing page
 
-    - Desktop view
-
 ![screenshot](./images/ss1.PNG)
-
-    - Tablet view
-
-![screenshot](./images/ss2.PNG)
-
-    - Phone view
-
-![screenshot](./images/ss3.PNG)
 
 Additional description about the project and its features.
 
@@ -57,7 +47,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [Acknowlegment] Mathew Njuguna https://www.behance.net/mathewnjuguna
+- [Acknowlegment](Mathew Njuguna https://www.behance.net/mathewnjuguna)
 
 ## 📝 License
 
