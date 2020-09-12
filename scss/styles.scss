@@ -188,6 +188,9 @@ $contact-color: #dd3c33;
 }
 
 .section3 {
+  .card-body {
+    border: none;
+  }
   .d-flex {
     @include mobile {
       display: flex;
@@ -330,6 +333,14 @@ footer {
       }
     }
   }
+
+  .footer-third {
+    a {
+      @include mobile {
+        padding-right: 0;
+      }
+    }
+  }
 }
 
 //second page - show results
@@ -401,4 +412,9 @@ footer {
   .container {
     background-color: rgba(187, 184, 184, 0.904);
   }
+}
+
+.mapdir {
+  color: $nav-color;
+  justify-content: center;
 }

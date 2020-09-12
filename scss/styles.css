@@ -184,6 +184,10 @@ body {
   background-color: #519cd7;
 }
 
+.section3 .card-body {
+  border: none;
+}
+
 @media screen and (max-width: 767px) {
   .section3 .d-flex {
     display: -webkit-box;
@@ -371,6 +375,12 @@ footer .footer-second .learn-more {
   }
 }
 
+@media screen and (max-width: 767px) {
+  footer .footer-third a {
+    padding-right: 0;
+  }
+}
+
 .filter {
   background-color: #eee;
 }
@@ -455,5 +465,12 @@ footer .footer-second .learn-more {
 
 .moredetails .container {
   background-color: rgba(187, 184, 184, 0.904);
+}
+
+.mapdir {
+  color: #d3574a;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=styles.css.map */
