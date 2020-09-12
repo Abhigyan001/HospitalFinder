@@ -75,10 +75,34 @@ $contact-color: #dd3c33;
   }
 }
 
+//footer
+.footer-second {
+  button {
+    background-color: rgba(94, 91, 91, 0.582);
+
+    @include border;
+  }
+
+  input {
+    background-color: black;
+
+    @include border;
+  }
+}
+
+.footer-third {
+  a {
+    @include mobile {
+      padding-right: 0;
+    }
+  }
+}
+
 // section 1
 
 .section1 {
-  background-image: url(../images/hospital.jpg),
+  background-image:
+    url(../images/hospital.jpg),
     linear-gradient(rgba(0, 0, 0, 0.63), rgba(155, 148, 148, 0.801));
   background-blend-mode: overlay;
   min-height: 95vh;
@@ -88,6 +112,7 @@ $contact-color: #dd3c33;
 
   .how {
     text-decoration: none;
+
     @include mobile {
       margin-bottom: 2%;
     }
@@ -187,10 +212,15 @@ $contact-color: #dd3c33;
   background-color: #519cd7;
 }
 
+.card-body {
+  border: 1px solid rgba(180, 177, 177, 0.459);
+}
+
 .section3 {
   .card-body {
     border: none;
   }
+
   .d-flex {
     @include mobile {
       display: flex;
@@ -232,13 +262,6 @@ $contact-color: #dd3c33;
 }
 
 // footer
-
-.footer-second {
-  button {
-    background-color: rgba(94, 91, 91, 0.582);
-    @include border;
-  }
-}
 
 footer {
   background-color: black;
@@ -301,11 +324,6 @@ footer {
       }
     }
 
-    input {
-      background-color: black;
-      @include border;
-    }
-
     .emailid {
       color: $contact-color;
       font-size: 18px;
@@ -330,14 +348,6 @@ footer {
         &:nth-child(2) {
           margin: 5% 0;
         }
-      }
-    }
-  }
-
-  .footer-third {
-    a {
-      @include mobile {
-        padding-right: 0;
       }
     }
   }
@@ -385,10 +395,6 @@ footer {
   @include mobile {
     font-size: 27px;
   }
-}
-
-.card-body {
-  border: 1px solid rgba(180, 177, 177, 0.459);
 }
 
 .details {
