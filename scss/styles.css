@@ -5,6 +5,10 @@ body {
           box-sizing: border-box;
 }
 
+* a {
+  text-decoration: none !important;
+}
+
 .nav-menu {
   background-color: #d3574a;
 }
@@ -429,5 +433,18 @@ footer .footer-second .learn-more {
 
 .card-body {
   border: 1px solid rgba(180, 177, 177, 0.459);
+}
+
+.details {
+  background-color: #eee;
+  width: 80%;
+  margin: auto;
+  -webkit-box-shadow: 0 6px 25px -7px black;
+          box-shadow: 0 6px 25px -7px black;
+}
+
+.details h5 {
+  border: 1px solid lightgray;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

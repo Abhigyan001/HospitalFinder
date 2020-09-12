@@ -4,6 +4,10 @@ body {
   box-sizing: border-box;
 }
 
+* a {
+  text-decoration: none !important;
+}
+
 $nav-color: #d3574a;
 $custom-grey: #98a4a5;
 $contact-color: #dd3c33;
@@ -374,4 +378,16 @@ footer {
 
 .card-body {
   border: 1px solid rgba(180, 177, 177, 0.459);
+}
+
+.details {
+  background-color: #eee;
+  width: 80%;
+  margin: auto;
+  box-shadow: 0 6px 25px -7px rgba(0, 0, 0, 1);
+
+  h5 {
+    border: 1px solid lightgray;
+    text-align: center;
+  }
 }
