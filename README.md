@@ -34,7 +34,7 @@ It is responsive across multiple devices.
 👤 **Abhigyan Mahanta**
 
 - Github: [@githubhandle](https://github.com/Abhigyan001)
-- Linkedin: [linkedin](https://linkedin.com/in/ntwali-heritier-9950001a2)
+- Linkedin: [Linkedin Profile](https://www.linkedin.com/in/abhigyan-mahanta-b49799145/)
 
 ## Live Link
 
@@ -49,7 +49,7 @@ To get a local copy up and running follow these simple example steps.
 - Modify and check result in browser.
 
 Prerequisites
-Text editor,Github profile and Git.
+Text editor, Github profile and Git.
 
 ## Show your support
 
