@@ -367,11 +367,11 @@ footer .footer-second .learn-more {
   }
 }
 
-.search-results {
+.filter {
   background-color: #eee;
 }
 
-.search-results form {
+.filter form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -382,7 +382,7 @@ footer .footer-second .learn-more {
 }
 
 @media screen and (max-width: 767px) {
-  .search-results form {
+  .filter form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -391,10 +391,10 @@ footer .footer-second .learn-more {
         -ms-flex-align: stretch;
             align-items: stretch;
   }
-  .search-results form div {
+  .filter form div {
     margin-bottom: 2%;
   }
-  .search-results form .align-self-lg-end {
+  .filter form .align-self-lg-end {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
@@ -402,7 +402,7 @@ footer .footer-second .learn-more {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .search-results form {
+  .filter form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -411,13 +411,23 @@ footer .footer-second .learn-more {
         -ms-flex-align: stretch;
             align-items: stretch;
   }
-  .search-results form div {
+  .filter form div {
     margin-bottom: 2%;
   }
-  .search-results form .align-self-lg-end {
+  .filter form .align-self-lg-end {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .heading1 {
+    font-size: 27px;
+  }
+}
+
+.card-body {
+  border: 1px solid rgba(180, 177, 177, 0.459);
 }
 /*# sourceMappingURL=styles.css.map */

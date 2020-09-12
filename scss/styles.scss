@@ -330,7 +330,7 @@ footer {
 
 //second page - show results
 
-.search-results {
+.filter {
   background-color: #eee;
 
   form {
@@ -364,4 +364,14 @@ footer {
       }
     }
   }
+}
+
+.heading1 {
+  @include mobile {
+    font-size: 27px;
+  }
+}
+
+.card-body {
+  border: 1px solid rgba(180, 177, 177, 0.459);
 }
