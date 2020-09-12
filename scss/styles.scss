@@ -384,10 +384,21 @@ footer {
   background-color: #eee;
   width: 80%;
   margin: auto;
-  box-shadow: 0 6px 25px -7px rgba(0, 0, 0, 1);
+  box-shadow: 0 5px 23px -4px rgb(22, 22, 22);
+
+  h1,
+  .fa-clinic-medical {
+    color: $nav-color;
+  }
 
   h5 {
     border: 1px solid lightgray;
     text-align: center;
+  }
+}
+
+.moredetails {
+  .container {
+    background-color: rgba(187, 184, 184, 0.904);
   }
 }

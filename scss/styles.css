@@ -439,12 +439,21 @@ footer .footer-second .learn-more {
   background-color: #eee;
   width: 80%;
   margin: auto;
-  -webkit-box-shadow: 0 6px 25px -7px black;
-          box-shadow: 0 6px 25px -7px black;
+  -webkit-box-shadow: 0 5px 23px -4px #161616;
+          box-shadow: 0 5px 23px -4px #161616;
+}
+
+.details h1,
+.details .fa-clinic-medical {
+  color: #d3574a;
 }
 
 .details h5 {
   border: 1px solid lightgray;
   text-align: center;
+}
+
+.moredetails .container {
+  background-color: rgba(187, 184, 184, 0.904);
 }
 /*# sourceMappingURL=styles.css.map */
