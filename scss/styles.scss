@@ -327,3 +327,41 @@ footer {
     }
   }
 }
+
+//second page - show results
+
+.search-results {
+  background-color: #eee;
+
+  form {
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: stretch;
+
+      div {
+        margin-bottom: 2%;
+      }
+
+      .align-self-lg-end {
+        align-self: start;
+      }
+    }
+
+    @include tabs {
+      flex-direction: column;
+      align-items: stretch;
+
+      div {
+        margin-bottom: 2%;
+      }
+
+      .align-self-lg-end {
+        align-self: start;
+      }
+    }
+  }
+}
