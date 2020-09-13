@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="icon" href="images/hospicon.ico" type="image/gif" sizes="16x16" />
+
+  <!-- Bootstrap file -->
+
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <script src="js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="scss/styles.css" />
+
+  <!-- fontawesome file -->
+  <script src="https://kit.fontawesome.com/5b1eeceadd.js" crossorigin="anonymous"></script>
+
+  <title>HospitalFinder-Results</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <header class="nav-menu px-4 py-2">
+    <nav class="d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <a href="index.html"><span><i class="fas fa-hospital-alt"></i></span>
+          <span class="h5">HOSPITALFINDER</span></a>
+      </div>
+      <div class="menu d-flex justify-content-lg-around">
+        <div class="menu-items p-2">
+          <a href="#"><span><i class="fas fa-search"></i></span>
+            <span class="d-lg-inline d-md-none">HOSPITAL</span></a>
+        </div>
+        <div class="menu-items p-2">
+          <a href="#"><span><i class="fas fa-user"></i></span>
+            <span class="d-lg-inline d-md-none">ABOUT</span></a>
+        </div>
+        <div class="menu-items p-2">
+          <a href="#"><span class="rotation"><i class="fas fa-wifi"></i></span>
+            <span class="d-lg-inline d-md-none">BLOG</span></a>
+        </div>
+        <div class="menu-items p-2">
+          <a href="#"><span><i class="fas fa-bars"></i></span>
+            <span class="d-lg-inline d-md-none">MORE</span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="filter p-5 h4 mt-5">
+      <p class="text-secondary font-weight-bold text-center mt-2 mb-5">
+        Filter by hospital name, district, city, distance, and cabin
+        availability:
+      </p>
+      <h2 class="d-none">None</h2>
+      <h3 class="d-none">None</h3>
+      <form class="d-flex">
+        <div class="d-flex flex-column">
+          <span class="mb-2">Hospital Name</span>
+          <input class="form-control" id="name" type="text" />
+        </div>
+        <div class="d-flex flex-column">
+          <span class="mb-2">District</span>
+          <select class="form-control">
+            <option value="Morigaon">MORIGAON</option>
+            <option value="KAMRUP">KAMRUP</option>
+            <option value="NAGAON">NAGAON</option>
+            <option value="SONITPUR">SONITPUR</option>
+          </select>
+        </div>
+        <div class="d-flex flex-column">
+          <span class="mb-2">City</span>
+          <select class="form-control">
+            <option value="Guwahati">GUWAHATI</option>
+            <option value="Tezpur">TEZPUR</option>
+            <option value="Dibrugarh">DIBRUGARH</option>
+            <option value="Jorhat">JORHAT</option>
+            <option value="Lakhimpur">Lakhimpur</option>
+          </select>
+        </div>
+        <div class="d-flex flex-column">
+          <span class="mb-2">Distance</span>
+          <select class="form-control">
+            <option value="1okm">Within 10 km</option>
+            <option value="2okm">Within 20 km</option>
+            <option value="3okm">Within 30 km</option>
+            <option value="4okm">Within 40 km</option>
+            <option value="5okm">Within 50 km</option>
+          </select>
+        </div>
+        <div class="d-flex flex-column">
+          <span class="mb-2">Cabin Available</span>
+          <select class="form-control">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="d-flex flex-column">
+          <span class="mb-2">Pick-up</span>
+          <select class="form-control">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="align-self-lg-end">
+          <button class="btn btn-primary">Search</button>
+          <button class="btn btn-warning">Reset filter</button>
+        </div>
+      </form>
+    </div>
+
+    <h1 class="text-center my-4 heading1">
+      Search Results Found 3 hospital(s):
+    </h1>
+    <h2 class="d-none">None</h2>
+    <h3 class="d-none">None</h3>
+    <div class="card-group mb-4 mx-2">
+      <div class="card mx-3">
+        <div class="card-body">
+          <h3 class="card-title text-center">Result #1</h3>
+        </div>
+        <a href="index3.html"><img class="card-img-top" src="images/hosp1.jpg" alt="Card image cap" /></a>
+      </div>
+      <div class="card mx-3">
+        <div class="card-body">
+          <h3 class="card-title text-center">Result #2</h3>
+        </div>
+        <a href="index3.html"><img class="card-img-top" src="images/hosp2.jpg" alt="Card image cap" /></a>
+      </div>
+      <div class="card mx-3">
+        <div class="card-body">
+          <h3 class="card-title text-center">Result #3</h3>
+        </div>
+        <a href="index3.html"><img class="card-img-top" src="images/hosp3.jpg" alt="Card image cap" /></a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-first d-flex py-5">
+      <div class="border-top border-bottom">
+        <a href="#" class="d-inline-block text-white p-lg-3 p-md-3">HOME</a>
+        <a href="#" class="d-inline-block text-white p-lg-3 p-md-3">SEARCH</a>
+        <a href="#" class="d-inline-block text-white p-lg-3 p-md-3">ABOUT US</a>
+        <a href="#" class="d-inline-block text-white p-lg-3 p-md-3">ADVERTISE</a>
+      </div>
+      <div class="p-lg-4 footericon">
+        <a href="#" class="d-inline-block text-white"><i class="fas fa-hospital-alt fa-2x"></i></a>
+      </div>
+      <div class="border-top border-bottom">
+        <a href="#" class="d-inline-block text-white p-lg-3 p-md-3">FACEBOOK</a>
+        <a href="#" class="d-inline-block text-white p-lg-3 p-md-3">TWITTER</a>
+        <a href="#" class="d-inline-block text-white p-lg-3 p-md-3">BLOG</a>
+        <a href="#" class="d-inline-block text-white p-lg-3 p-md-3">GOOGLE+</a>
+      </div>
+    </div>
+    <div class="container mt-lg-5">
+      <div class="footer-second row px-5 pb-5">
+        <div class="col-lg-4">
+          <h4 class="text-white">SUBSCRIBE</h4>
+          <form class="d-flex">
+            <input type="text" class="py-2" />
+            <button class="text-white px-2 py-2">Send</button>
+          </form>
+        </div>
+        <div class="col-lg-4 text-white text-center">
+          <h4>CONTACT</h4>
+          <p class="h5">Have question or submission?</p>
+          <p class="emailid">hospitalfinder@gmail.com</p>
+        </div>
+        <div class="col-lg-4 text-white text-center">
+          <h4>ABOUT</h4>
+          <p class="h5">
+            HospitalFinder is a hospital locating website that assists you to
+            find the nearest hospitals in your locality. Every listed hospital
+            comes with ambulance service at your doorstep.
+            <a href="#" class="learn-more">Learn more.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-third bg-dark justify-content-between align-items-center text-white p-3 d-flex">
+      <div>
+        <a href="#" class="pr-4"><i class="fab fa-facebook-f text-white"></i></a>
+        <a href="#" class="pr-4"><i class="fab fa-instagram text-white"></i></a>
+        <a href="#" class="pr-4"><i class="fab fa-twitter text-white"></i></a>
+        <a href="#" class="pr-4"><i class="fab fa-youtube text-white"></i></a>
+        <a href="#" class="pr-4"><i class="fab fa-google-plus-g text-white"></i></a>
+      </div>
+      <div>
+        <p class="mb-0">&copy;2020 All right reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
