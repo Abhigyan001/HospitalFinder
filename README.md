@@ -24,7 +24,7 @@ It is responsive across multiple devices.
 👤 **Abhigyan Mahanta**
 
 - Github: [@githubhandle](https://github.com/Abhigyan001)
-- Linkedin: [Linkedin Profile](https://www.linkedin.com/in/abhigyan-mahanta-b49799145/)
+- Linkedin: [Linkedin Profile](https://www.linkedin.com/in/abhigyan001/)
 
 ## Live Link
 
